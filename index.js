@@ -73,4 +73,8 @@ function limpiarTexto() {
 
     let muñeco = document.getElementById("muñeco");
     muñeco.src="./img/muñeco.png";
+    let tituloMensaje = document.getElementById("titulo-mensaje");
+    let parrafo = document.getElementById("parrafo");
+    tituloMensaje.textContent = "Ningún mensaje fue encontrado";
+    parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
 }
