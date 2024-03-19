@@ -54,3 +54,23 @@ function desencriptar(){
     }                
 
 }
+function copiarTexto() {
+    let textoEncriptado = document.getElementById("texto").value;
+    
+    navigator.clipboard.writeText(textoEncriptado)
+        .then(() => {
+            alert("Texto copiado en el portapapeles");
+        })
+        .catch(err => {
+            console.error('Error al copiar texto: ', err);
+            alert("No se pudo copiar el texto en el portapapeles");
+        });
+}
+
+function limpiarTexto() {
+    let textoEncriptado = document.getElementById("texto");
+    textoEncriptado.value = "";
+
+    let muñeco = document.getElementById("muñeco");
+    muñeco.src="./img/muñeco.png";
+}

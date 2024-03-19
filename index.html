@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
     <link rel="stylesheet" href="styles.css">
+        
 </head>
     <body>
         <div class="container">
@@ -37,10 +38,13 @@
                     <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
                     <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
                     <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
+                    <div class="acciones">
+                        <button class="btn-copiar" id="btnCopiar" onclick="copiarTexto()">Copiar</button>
+                        <button class="btn-refrescar" id="btnRefrescar" onclick="limpiarTexto()">Refrescar</button>
+                    </div>    
                 </div>
             </div>  
         </div>  
-
     </body>
 <script src="index.js"></script>
 </html>
